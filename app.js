@@ -1,8 +1,10 @@
 // 1.1. What is the difference between a parameter and an argument?
+//Arguments are real values and parameter intialized to the value of the argument`
 
-// 1.2. Within a function, what is the difference between return and console.log?
+// 1.2. Within a function, what is the difference between return and console.log? console.log prints what you ask and return is used for returning values
 
-// 1. 3. What are the implications of the ability of a function to return a value?
+// 1. 3. What are the implications of the ability of a function to return a value? Immediatlly terminates the value of the function
+
 
 // 2. calculateCube
 function calculateCube(num) {
