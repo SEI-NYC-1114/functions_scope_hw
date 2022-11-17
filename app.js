@@ -1,14 +1,17 @@
 // 1.1. What is the difference between a parameter and an argument?
-`A parameter is what defines a variable in a function, an argument is a value that is declared within a function. A parameter is a "placeholder" for an argument, which will be later defined.`
+// `A parameter is what defines a variable in a function, an argument is a value that is declared within a function. A parameter is a "placeholder" for an argument, which will be later defined.`
 // 1.2. Within a function, what is the difference between return and console.log?
-`Return will stop the function from running any further, and it returns the value of whatever is defined in the return statement.`
+// `Return will stop the function from running any further, and it returns the value of whatever is defined in the return statement.`
 // 1. 3. What are the implications of the ability of a function to return a value?
-`Return will allow the function to use the value of whatever is passed through it.`
+// `Return will allow the function to use the value of whatever is passed through it.`
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    let square = num * num;
+    let cube = square * num;
+    return cube;
 }
+console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
