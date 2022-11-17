@@ -16,7 +16,15 @@ console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(letter) {
   // YOUR CODE HERE
+  let arr = ["a", "o", "e", "i", "u", "A", "O", "E", "I", "U"];
+  for (let i = 0; i < arr.length; i++) {
+    if (letter === arr[i]) {
+      return true;
+    }
+  }
+  return false;
 }
+console.log(isAVowel("I"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
