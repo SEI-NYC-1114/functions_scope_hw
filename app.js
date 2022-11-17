@@ -19,12 +19,15 @@ function isAVowel(letter) {
     return true;
     else return false;
 }
-console.log(isAVowel("z"));
+//console.log(isAVowel("z"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    let lengthOne = word1.length;
+    let lengthTwo = word2.length;
+    return [lengthOne, lengthTwo];
 }
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
