@@ -11,12 +11,15 @@ function calculateCube(num) {
     let cube = square * num;
     return cube;
 }
-console.log(calculateCube(5));
+//console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    if (letter.toUpperCase() == "A" || letter.toUpperCase() == "E" || letter.toUpperCase() == "I" || letter.toUpperCase() == "O" || letter.toUpperCase() == "U") 
+    return true;
+    else return false;
 }
+console.log(isAVowel("z"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
