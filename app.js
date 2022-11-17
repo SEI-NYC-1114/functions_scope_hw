@@ -70,18 +70,47 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    let arr = [];
+    let fibo = 1;
+    for(let i = 0; i <= num; i+=0) {
+        if (i === 0) {
+            arr.push(i + 1);
+            fibo += arr[i];
+            console.log(arr);
+            i += fibo
+        } else if (i !== 0) {
+            arr.push(i);
+            fibo += arr[i];
+            console.log(arr);
+            i += fibo
+        }
+    }
 }
+ eulerFibo(99)
+//  cant figure this one out oof
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // YOUR CODE HERE
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i] === "needle") {
+            return console.log(`found the needle at position ${i}`)
+        }
+    }
 }
+findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+
 
 // 10. sumPositive
+let arrayy = [1, -4, 7, 12]
 function sumPositive(arr) {
-    // YOUR CODE HERE
+    let sum = 0
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0) {
+            sum += arr[i];
+        }
+    } return console.log(sum);
 }
+sumPositive(arrayy)
 
 module.exports = {
     calculateCube,
