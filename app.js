@@ -9,12 +9,18 @@ function calculateCube(num) {
     // YOUR CODE HERE
     return (num ** 3);
 }
-console.log(calculateCube(5));
+// console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    if (letter.toLowerCase() === 'a' || letter.toLowerCase() === 'e' || letter.toLowerCase() === 'i' || letter.toLowerCase() === 'o' || letter.toLowerCase() === 'u') return true;
+    return false;
 }
+console.log(isAVowel("a"));
+console.log(isAVowel("T"));
+console.log(isAVowel("E"));
+console.log(isAVowel("r"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
