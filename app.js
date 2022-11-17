@@ -19,7 +19,10 @@ When the function returns a value it can be used again.  This allows for functio
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
+    return num ** 3;
 }
+
+console.log(calculateCube(5));//testing code
 
 // 3. isAVowel
 function isAVowel(letter) {
