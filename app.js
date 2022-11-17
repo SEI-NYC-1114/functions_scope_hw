@@ -6,9 +6,9 @@
 // The implication is that a function is very flexible and the scope of its use is universal. 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    return num * num * num;
 }
-
+console.log(calculateCube(4));
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
