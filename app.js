@@ -11,8 +11,17 @@
 
 // 2. calculateCube
 function calculateCube(num) {
+    // let cubed = 0;
+    // for (let i = 1; i <= num; i++) {
+    //     cubed += i ** 3;
+    // }
+    // return cubed;
+
+    return num **3;
     // YOUR CODE HERE
 }
+
+console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
