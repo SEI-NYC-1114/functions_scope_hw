@@ -17,15 +17,18 @@ function isAVowel(letter) {
     if (letter.toLowerCase() === 'a' || letter.toLowerCase() === 'e' || letter.toLowerCase() === 'i' || letter.toLowerCase() === 'o' || letter.toLowerCase() === 'u') return true;
     return false;
 }
-console.log(isAVowel("a"));
-console.log(isAVowel("T"));
-console.log(isAVowel("E"));
-console.log(isAVowel("r"));
+// console.log(isAVowel("a"));
+// console.log(isAVowel("T"));
+// console.log(isAVowel("E"));
+// console.log(isAVowel("r"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    let arr = [word1.length, word2.length];
+    return arr;
 }
+console.log(getTwoLengths('Hank', 'Hippopopalous'));
 
 // 5. sumArray
 function sumArray(arr) {
@@ -45,6 +48,7 @@ function printPrimes(num) {
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+
 }
 
 // BONUS!
