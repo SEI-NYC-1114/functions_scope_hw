@@ -18,9 +18,12 @@ function isAVowel(letter) {
 console.log(isAVowel("a"))
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    let arr = [];
+    arr.push(word1.length);
+    arr.push(word2.length);
+    return arr
 }
-
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
