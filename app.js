@@ -22,16 +22,24 @@ function calculateCube(num) {
     return num ** 3;
 }
 
-console.log(calculateCube(5));//testing code
+// console.log(calculateCube(5));//testing code
 
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    letter = letter.toLowerCase();
+    if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') {
+        return true;
+    }
+    return false;
 }
+
+// console.log(isAVowel("U")); //testing code
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+
 }
 
 // 5. sumArray
