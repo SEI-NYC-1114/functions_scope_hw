@@ -35,14 +35,23 @@ function sumArray(arr) {
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
-}
+    for(let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0 || num === 2) {
+            return false;
+        }
+    } return true;
+} 
+console.log(checkPrime(4))
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    for(let i = 2; i <= num; i++) {
+        if (checkPrime(i) === true) {
+            console.log(i);
+        }
+    }
 }
-
+printPrimes(97);
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
