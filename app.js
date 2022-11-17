@@ -11,9 +11,11 @@ function calculateCube(num) {
 console.log(calculateCube(4));
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    letter = letter.toUpperCase()
+    if (letter === "A" || letter === "E" || letter === "I" || letter === "O" || letter === "U") return true;
+    return false;
 }
-
+console.log(isAVowel("a"))
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
