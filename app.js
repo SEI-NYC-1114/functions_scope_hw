@@ -1,13 +1,18 @@
 // 1.1. What is the difference between a parameter and an argument?
-` 🚩 The parameters are the aliases for the values that will be passed to the function. The arguments are the actual values. `// 1.2. Within a function, what is the difference between return and console.log?
-` 🚩 console.log is a function in javascript and return is a keyword. console.log is used to debug/print information to the console. Return on the other hand is a call to pass the value where the call was made console.log is not going to stop the execution while return stops the execution and return the specific value.`;
+let answer_1_1 = ` 🚩 The parameters are the aliases for the values that will be passed to the function. The arguments are the actual values. `;
+console.log(answer_1_1);
+// 1.2. Within a function, what is the difference between return and console.log?
+let answer_1_2 = ` 🚩 console.log is a function in javascript and return is a keyword. console.log is used to debug/print information to the console. Return on the other hand is a call to pass the value where the call was made console.log is not going to stop the execution while return stops the execution and return the specific value.`;
+console.log(answer_1_2);
 // 1. 3. What are the implications of the ability of a function to return a value?
-` 🚩 In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want. Don't Repeat Yourself ( DRY ) is a principle of software development and its main goal is to avoid code duplication.`;
+let answer_1_3 = ` 🚩 In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want. Don't Repeat Yourself ( DRY ) is a principle of software development and its main goal is to avoid code duplication.`;
+console.log(answer_1_3);
 // 2. calculateCube
 function calculateCube(num) {
   // YOUR CODE HERE
+  return num ** 3;
 }
-
+console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(letter) {
   // YOUR CODE HERE
