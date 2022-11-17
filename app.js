@@ -1,7 +1,8 @@
 // 1.1. What is the difference between a parameter and an argument?
-` 🚩 The term parameter (sometimes called formal parameter) is often used to refer to the variable as found in the function definition, while argument (sometimes called actual parameter) refers to the actual input supplied at function call. `; // 1.2. Within a function, what is the difference between return and console.log?
+` 🚩 The parameters are the aliases for the values that will be passed to the function. The arguments are the actual values. `// 1.2. Within a function, what is the difference between return and console.log?
+` 🚩 console.log is a function in javascript and return is a keyword. console.log is used to debug/print information to the console. Return on the other hand is a call to pass the value where the call was made console.log is not going to stop the execution while return stops the execution and return the specific value.`;
 // 1. 3. What are the implications of the ability of a function to return a value?
-
+` 🚩 In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want. Don't Repeat Yourself ( DRY ) is a principle of software development and its main goal is to avoid code duplication.`;
 // 2. calculateCube
 function calculateCube(num) {
   // YOUR CODE HERE
