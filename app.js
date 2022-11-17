@@ -1,28 +1,51 @@
 // 1.1. What is the difference between a parameter and an argument?
+// parameters are variables that a function can take and arguments are the values
+// you are passing into the function.
 
 // 1.2. Within a function, what is the difference between return and console.log?
+// return outputs a data in string, number, or bool that can be used. console.log 
+// outputs values into the console and thats it.
 
 // 1. 3. What are the implications of the ability of a function to return a value?
+// you can put function inside of functions as an argument. you can put functions 
+// in anything that has an parameter as an argument which makes return a very powerful
+// feature.
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+   return num ** 3 
 }
 
 // 3. isAVowel
-function isAVowel(letter) {
+function isAVowel(letter) { 
     // YOUR CODE HERE
-}
+    if (letter.toLowerCase() == 'a') return true
+    else if (letter.toLowerCase() == 'e') return true
+    else if (letter.toLowerCase() == 'i') return true
+    else if (letter.toLowerCase() == 'o') return true
+    else if (letter.toLowerCase() == 'u') return true
+  
+  };
+  
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
-}
+    array = [];
+    array.push(word1.length, word2.length);
+    return array
+  }
 
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
-}
+    sum = 0;
+    for (i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum
+};
+
 
 // 6.1 checkPrime
 function checkPrime(num) {
