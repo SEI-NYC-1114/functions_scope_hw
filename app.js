@@ -1,13 +1,26 @@
 // 1.1. What is the difference between a parameter and an argument?
 
+// ANSWER: A parameter is is what is inside of the () following a fuction. They do not hold a real value but indicate where that real value will be placed. Arugments are the real value that will be insterted into the parameter in a function.
+
 // 1.2. Within a function, what is the difference between return and console.log?
+
+//ANSWER: retrun statemets stop the execution of a function as well as defines a value to be to test agaist the function. Console.log, communicates what is happening in the code and deos not stop the execution. It is best practice to have many console.log statements.
+
+
 
 // 1. 3. What are the implications of the ability of a function to return a value?
 
+//ANSWER: functions allow developers to practice DRY code and also makes code more compact and neat. Using functions means we dont ave to write new lines of code everytime we want to complete a common task. 
+
+
+
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    num = num*num*num
+    return num;
 }
+console.log(calculateCube(500));
+
 
 // 3. isAVowel
 function isAVowel(letter) {
