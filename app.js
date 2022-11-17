@@ -12,8 +12,11 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    let volume = Math.pow(num, 3);
+    return volume;
 }
+
+console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
