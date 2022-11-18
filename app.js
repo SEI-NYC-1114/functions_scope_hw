@@ -50,13 +50,31 @@ function sumArray(arr) {
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
-}
+    numSqr = num**0.5;
+    console.log(`square root of ${num} is ${numSqr}`);
+    let isPrime = true
+  
+    if ((numSqr) % 1 == 0 ) isPrime = false;
+  
+    for (i = 2; i <= Math.floor(numSqr); i ++) {
+        if ((num / i) % 1 == 0) {
+            isPrime = false
+        }
+    return isPrime
+    }
+  };
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
-}
-
+    primeList = []
+    for (j = 2; j <= num; j++) {
+        if (checkPrime(j)) {
+            primeList.push(j);
+            console.log(primeList)
+        }
+    };
+    return primeList
+  };
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
