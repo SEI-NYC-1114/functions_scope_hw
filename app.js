@@ -83,12 +83,29 @@ function printPrimes(num) {
   primesArr.forEach(prime => console.log(prime))
 }
 
-console.log(printPrimes(97))
+// console.log(printPrimes(97))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-  // YOUR CODE HERE
+  if (!Array.isArray(arr) || !(arr.every(i => typeof i === 'string'))) {
+    return 'must enter an array of strings'
+  }
+
+  return arr.sort((a, b) => b.length - a.length)[0]
 }
+
+// console.log(
+//   printLongestWord([
+//     'BoJack',
+//     'Princess',
+//     'Diane',
+//     'a',
+//     'Max',
+//     'Peanutbutter',
+//     'big',
+//     'blob'
+//   ])
+// )
 
 // BONUS!
 
