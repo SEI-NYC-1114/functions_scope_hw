@@ -22,10 +22,29 @@ function calculateCube(num) {
 console.log(calculateCube(500));
 
 
-// 3. isAVowel
+
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    if(letter === "A")
+    return true;
+    if(letter === "E")
+    return true;
+    if(letter === "I")
+    return true;
+    if(letter === "O")
+    return true;
+    if(letter === "U")
+    return true;
+    else return false;
 }
+    isAVowel();
+    console.log(isAVowel("B"));
+    console.log(isAVowel("A"));
+    console.log(isAVowel("E"));
+    console.log(isAVowel("I"));
+    console.log(isAVowel("O"));
+    console.log(isAVowel("U"));
+    console.log(isAVowel("S"));
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
@@ -78,6 +97,6 @@ module.exports = {
     printPrimes,
     printLongestWord,
     eulerFibo,
+};
     findNeedle,
     sumPositive
-};
