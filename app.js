@@ -82,8 +82,16 @@
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    let currentLongest = []; 
+    for (let i = 0; i < arr.length; i++) {
+        let currentWord = arr[i]; 
+        if (currentWord.length > currentLongest.length) {
+            currentLongest = currentWord; 
+        } return currentLongest; 
+    } return arr; 
 }
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
@@ -108,7 +116,7 @@ module.exports = {
     //getTwoLengths,
    // sumArray,
     //checkPrime,
-    printPrimes,
+    //printPrimes,
     printLongestWord,
     eulerFibo,
     findNeedle,
