@@ -16,8 +16,7 @@ function calculateCube(num) {
     return volume;
 }
 
-// 
-console.log(calculateCube(5));
+// console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
@@ -26,12 +25,15 @@ function isAVowel(letter) {
         return true;
     } return false;
 }
-// console.log(isAVowel("O"));
+//console.log(isAVowel("O"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    let arr = [word1.length, word2.length];
+    return arr;
 }
+
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
