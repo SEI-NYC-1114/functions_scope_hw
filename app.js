@@ -101,6 +101,7 @@ console.log(
 // BONUS!
 
 // 8. eulerFibo
+
 function eulerFibo(num) {
   // YOUR CODE HERE
   // 0 1 1 2 3 5
