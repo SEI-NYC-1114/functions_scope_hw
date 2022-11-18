@@ -45,11 +45,16 @@ function isAVowel(letter) {
     console.log(isAVowel("U"));
     console.log(isAVowel("S"));
 
+    
 
-// 4. getTwoLengths
+    //4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
-}
+    array = [];
+    array.push(word1.length, word2.length);
+    return array
+  }
+  console.log(getTwoLengths("Hello", "Goodbye"));
 
 // 5. sumArray
 function sumArray(arr) {
