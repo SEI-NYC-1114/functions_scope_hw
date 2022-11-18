@@ -48,13 +48,33 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 // 6.1 checkPrime
 function checkPrime(num) {
   // YOUR CODE HERE
+  //   const primeNumber = num;
+  //   sqRoot = Math.sqrt(num);
+  //   for (let i = 2; i <= sqRoot; i++) if (num % i === 0) return false;
+  //   return num > 1;
+  if (num === 1) {
+    return false;
+  } else if (num === 2) {
+    return true;
+  } else {
+    for (let x = 2; x < num; x++) {
+      if (num % x === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
-
 // 6.2 printPrimes
 function printPrimes(num) {
   // YOUR CODE HERE
+  for (let i = 2; i <= num; i++) {
+    if (checkPrime(i)) {
+      console.log(i);
+    }
+  }
 }
-
+printPrimes(97);
 // 7. printLongestWord
 function printLongestWord(arr) {
   // YOUR CODE HERE
