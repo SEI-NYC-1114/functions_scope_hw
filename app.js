@@ -10,7 +10,7 @@
 
 // 1. 3. What are the implications of the ability of a function to return a value?
 
-//ANSWER: functions allow developers to practice DRY code and also makes code more compact and neat. Using functions means we dont ave to write new lines of code everytime we want to complete a common task. 
+//ANSWER: functions allow developers to practice DRY code and also makes code more compact and neat. Using functions means we dont have to write new lines of code everytime we want to complete a common task. 
 
 
 
@@ -56,10 +56,31 @@ function getTwoLengths(word1, word2) {
   }
   console.log(getTwoLengths("Hello", "Goodbye"));
 
-// 5. sumArray
+
+
+  //   ## 5. Sum Array
+//   Write a function `sumArray` that takes an **array** as an argument.
+//   The array should contain numbers. The function should return the sum of the numbers in the array. **Do not use `.reduce()`**.
+  
+//   Expected result:
+//   ```javascript
+//   console.log(sumArray([1, 2, 3, 4, 5, 6]));
+//   => 21
+//   ```
+
+
+  // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    // YOUR CODE HERE 
+    let sum = 0;
+for(let i=0; i < arr.length; i++){
+    sum += arr[i]
 }
+    return sum  
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
 
 // 6.1 checkPrime
 function checkPrime(num) {
