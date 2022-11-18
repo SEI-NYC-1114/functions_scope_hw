@@ -104,7 +104,50 @@ function printLongestWord(arr) {
 // 8. eulerFibo
 function eulerFibo(num) {
     // YOUR CODE HERE
+    let prevNum = 0
+    let currentNum = 1
+    let evenArr = []
+    fib: while (currentNum <= num) {
+        prevNum += currentNum;
+        if (prevNum <= num) {
+            // console.log(prevNum); //console log each number
+            if (prevNum % 2 === 0){
+                evenArr.push(prevNum)
+            }
+        } else {
+            break fib;
+        }
+        currentNum += prevNum;
+        if (currentNum <= num) {
+            // console.log(currentNum) //console log each number
+            if (currentNum % 2 === 0) {
+                evenArr.push(currentNum)
+            }
+            
+        } else {
+            break fib;
+            
+        }
+        
+    }
+    return evenArr;
 }
+//Personal note to myself for desired output:
+//1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+//Finding the full array for even numbers less than 4M
+// console.log(eulerFibo(4000000));
+
+//finding sum of even numbered values that do not exceed 4,000,000
+
+const lessThanFourMil = () => {
+    let arr = eulerFibo(4000000);
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    return sum;
+}
+// console.log(lessThanFourMil());
 
 // 9. findNeedle
 function findNeedle(arr) {
