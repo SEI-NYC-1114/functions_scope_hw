@@ -103,7 +103,53 @@ console.log(
 // 8. eulerFibo
 function eulerFibo(num) {
   // YOUR CODE HERE
+  // 0 1 1 2 3 5
+  const even = [];
+  let a = 0;
+  let b = 1;
+  let c = 1;
+  sum = 0;
+  console.log(0);
+  while (c < num) {
+    c = a + b;
+    console.log(c);
+    if (c % 2 === 0) {
+      even.push(c);
+    }
+    a = b;
+    b = c;
+    sum = sum + c;
+  }
+  console.log(" print the Fibonacci sequence up to 5");
+  console.log(even);
+  console.log(
+    "sum of the even numbered values that do not exceed four million"
+  );
+  console.log(sum);
 }
+console.log("print the Fibonacci sequence up to 5");
+eulerFibo(5);
+console.log("print the Fibonacci sequence up to ");
+eulerFibo(4000000);
+// 1 -> 0 0
+// ^    ^ ^
+// c    b a
+
+// 1 -> 1 0
+// ^    ^ ^
+// c    b a
+
+// 2 -> 1 1
+// ^    ^ ^
+// c    b a
+
+// 3 -> 2 1
+// ^    ^ ^
+// c    b a
+
+// 5 -> 3 2
+// ^    ^ ^
+// c    b a
 
 // 9. findNeedle
 function findNeedle(arr) {
