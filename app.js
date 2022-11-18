@@ -13,11 +13,19 @@ function calculateCube(num) {
     let vol = num*num*num;
     return vol;
 }
-console.log(calculateCube(5));
+//console.log(calculateCube(5));
+
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    let vow = letter.toLowerCase();
+    if (vow === "a" || vow === "e" || vow === "i" || vow === "o" || vow === "u"){
+        return true;
+    } else {
+        return false;
+    }
 }
+console.log(isAVowel("a"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
