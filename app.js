@@ -16,8 +16,11 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    num = num * num * num;
+    return num;
 }
+
+console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
