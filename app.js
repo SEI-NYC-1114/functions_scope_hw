@@ -8,7 +8,7 @@
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
-    let cube = (num * num);
+    let cube = Math.pow(num, 2);
     return cube;
 }
 console.log(calculateCube(5));
