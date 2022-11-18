@@ -98,7 +98,7 @@ The commit message should read: <br>
 
 ## 6. Prime Numbers
 A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, [go here](https://en.wikipedia.org/wiki/Prime_number).
-To test whether a number is Prime, you only need to test as far as the **square root** of that number. This is advisable for optimization and testing large numbers.
+To test whether a number is Prime, you only need to test as far as the **square root** of that number. This is advisable for optimization and testing large numbers. 
 
 ### Step One
 Write a function called `checkPrime` that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if not.
