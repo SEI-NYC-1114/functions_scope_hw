@@ -5,23 +5,23 @@
 // 1. 3. What are the implications of the ability of a function to return a value?
 
 // 2. calculateCube
-// function calculateCube(num) {
+function calculateCube(num) {
 //     // YOUR CODE HERE
-//     return Math.pow(num, 3); 
+    return Math.pow(num, 3); 
     
     
-// }
-// console.log(calculateCube(5));
+}
+console.log(calculateCube(5));
 // // 3. isAVowel
-// function isAVowel(letter) {
-//     // YOUR CODE HERE
-//     if(letter.toLowerCase()=== "a" || letter.toLowerCase()==="e"){
-//         return true; 
-//     }else if(letter.toLowerCase()==="i"|| letter.toLowerCase()==="o"){ return true;
-//     }else if(letter.toLowerCase()==="u"){ return true;
-// }else {return false}
-// }
-// console.log(isAVowel("a"))
+function isAVowel(letter) {
+    // YOUR CODE HERE
+    if(letter.toLowerCase()=== "a" || letter.toLowerCase()==="e"){
+        return true; 
+    }else if(letter.toLowerCase()==="i"|| letter.toLowerCase()==="o"){ return true;
+    }else if(letter.toLowerCase()==="u"){ return true;
+}else {return false}
+}
+console.log(isAVowel("a"))
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
@@ -33,9 +33,15 @@ function getTwoLengths(word1, word2) {
 }
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
-// function sumArray(arr) {
-//     // YOUR CODE HERE
-// }
+function sumArray(arr) {
+    // YOUR CODE HERE
+    let sum = 0
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum;
+}
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // // 6.1 checkPrime
 // function checkPrime(num) {
