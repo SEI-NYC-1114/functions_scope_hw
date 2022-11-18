@@ -8,7 +8,10 @@
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
+    let cube = (num * num);
+    return cube;
 }
+console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
