@@ -8,15 +8,15 @@
 // Return is like the output of the function. When the function hits a return, it exits. Console.log just prints the JS to the console.
 
 // 1. 3. What are the implications of the ability of a function to return a value?
-// You may use functions to run chunks of code and return a new value that can be stored in a new variable. This is crucial if your function is an intermediate step in a larger problem that you're working out.
+// You may use functions to run chunks of code and return a new value that can be stored in a new variable. The function's return also acts as an exit or output of the function. This is crucial if your function is an intermediate step in a larger problem that you're working out.
 
 // 2. calculateCube
 function calculateCube(num) {
-    let volume = Math.pow(num, 3);
+    let volume = num ** 3;
     return volume;
 }
 
-// console.log(calculateCube(5));
+//console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
@@ -45,10 +45,16 @@ function sumArray(arr) {
 
 // console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
-// 6.1 checkPrime
+// // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    } return true;
 }
+
+// console.log(checkPrime(4));
 
 // 6.2 printPrimes
 function printPrimes(num) {
