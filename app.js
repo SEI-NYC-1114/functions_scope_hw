@@ -1,11 +1,11 @@
 // 1.1. What is the difference between a parameter and an argument?
-    // Parameters are what the function asks for while arguments are the actual values that are taken in.
+    //// Parameters are what the function asks for while arguments are the actual values that are taken in.
 // 1.2. Within a function, what is the difference between return and console.log?
-    // return asks the function to actually return some value
-    // console.log prints directly to console
+    //// return asks the function to actually return some value
+    //// console.log prints directly to console
 
 // 1. 3. What are the implications of the ability of a function to return a value?
-    // When working with a lot of data/information, it's useful to just call a function to return values than doing a bunch of hardcoding.
+    //// When working with a lot of data/information, it's useful to just call a function to return values than doing a bunch of hardcoding.
 
 // 2. calculateCube
 function calculateCube(num) {
