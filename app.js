@@ -14,9 +14,19 @@ function calculateCube(num) {
 console.log(calculateCube(5));
 
 // 3. isAVowel
+// YOUR CODE HERE
+let vowelsArr = ["a", "e", "i", "o", "u"]
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    
+    for(let i = 0; i < vowelsArr.length; i++){
+       if (letter == vowelsArr[i]) {
+        return true;
+       }
+       
+    }
+    return false;
 }
+console.log(isAVowel("z"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
