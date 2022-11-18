@@ -139,7 +139,7 @@ function eulerFibo(num) {
 //1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 
 //Testing code output
-console.log(eulerFibo(1000))
+// console.log(eulerFibo(1000))
 //Finding the full array for even numbers less than 4M
 // console.log(eulerFibo(4000000));
 
