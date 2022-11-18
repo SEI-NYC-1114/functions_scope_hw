@@ -56,19 +56,29 @@
 //=> 21
 
 // 6.1 checkPrime
-function checkPrime(num) {
-    let squareRoot = Math.sqrt(num); 
-    for (let i = 2; i < squareRoot; i++) { 
-        if (squareRoot % i != 0) return 'Not a prime number :(';
-    } return 'ITS PRIME CHIEF';
-}
+// function checkPrime(num) {
+//     let squareRoot = Math.sqrt(num); 
+//     for (let i = 2; i < squareRoot; i++) { 
+//         if (squareRoot % i != 0) //return 'Not a prime number :('
+//     } return 'ITS PRIME CHIEF';
+// }
 
-console.log(checkPrime(4));
+// console.log(checkPrime(4));
 
-// 6.2 printPrimes
-function printPrimes(num) {
-    // YOUR CODE HERE
-}
+// // 6.2 printPrimes
+// function printPrimes(num) {
+//     for (let i = 1; i <= num; i++) { 
+//         let squareRoot = Math.sqrt(i); 
+//         for (let j = 2; j < squareRoot; j++) {
+//             if (squareRoot % j == 0) {
+//                 console.log(i);
+//             }
+//         } 
+//     } 
+//     return num; 
+// }
+
+// printPrimes(10)
 
 // 7. printLongestWord
 function printLongestWord(arr) {
@@ -97,7 +107,7 @@ module.exports = {
     //isAVowel,
     //getTwoLengths,
    // sumArray,
-    checkPrime,
+    //checkPrime,
     printPrimes,
     printLongestWord,
     eulerFibo,
