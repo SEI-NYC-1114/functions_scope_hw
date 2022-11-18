@@ -152,11 +152,18 @@ const lessThanFourMil = () => {
 // 9. findNeedle
 function findNeedle(arr) {
     // YOUR CODE HERE
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === 'needle') {
+            return console.log(`found the needle at position ${i}`)
+        }
+    }
 }
+findNeedle(['hay', 'rolex', 'aMillionDollars', 'junk', 'corvette', 'hayHayHay', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk', 'meaningOfLife','moreStuff'])
 
 // 10. sumPositive
 function sumPositive(arr) {
     // YOUR CODE HERE
+
 }
 
 module.exports = {
