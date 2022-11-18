@@ -72,7 +72,7 @@ Write a function `getTwoLengths` that accepts two parameters (strings). The func
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 ```
 
-> => [4, 13]
+> => [4, 13]  
 
 <hr>
 &#x1F534; **Commit your work.** <br>
