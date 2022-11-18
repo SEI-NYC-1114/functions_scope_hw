@@ -7,14 +7,37 @@
 
 
 // 2. calculateCube
-function calculateCube(num) {
+function calculateCube() {
+    function calculateCube(n) {
+        return n*n*n;
+      }
+    
+    
+    console.log(calculateCube(5));
+
+
     // YOUR CODE HERE
 }
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    let Vowels = ["a", "e", "i", "o", "u"]
+    for (let i = 0; i < Vowels.length; i++) {
+        if(letter === Vowels[i]){
+            return true;
+
+        }
+        
+    }
+    return false;
 }
+    console.log(isAVowel("a"));
+
+
+
+
+    // YOUR CODE HERE
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
