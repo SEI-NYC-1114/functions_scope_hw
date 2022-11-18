@@ -72,14 +72,14 @@ function checkPrime(num) {
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
-    for (let i = 0; i <= num; i++) {
+    for (let i = 2; i <= num; i++) {
         if (checkPrime(i) === true) {
             console.log(i);
         }
     }
 }
 
-// console.log(printPrimes(97)); //testing code
+// console.log(printPrimes(9)); //testing code
 
 // 7. printLongestWord
 function printLongestWord(arr) {
@@ -107,12 +107,14 @@ function eulerFibo(num) {
     let prevNum = 0
     let currentNum = 1
     let evenArr = []
+    let evenSum = 0;
     fib: while (currentNum <= num) {
         prevNum += currentNum;
         if (prevNum <= num) {
             // console.log(prevNum); //console log each number
             if (prevNum % 2 === 0){
                 evenArr.push(prevNum)
+                evenSum += prevNum;
             }
         } else {
             break fib;
@@ -122,18 +124,22 @@ function eulerFibo(num) {
             // console.log(currentNum) //console log each number
             if (currentNum % 2 === 0) {
                 evenArr.push(currentNum)
+                evenSum += currentNum
             }
             
         } else {
-            break fib;
-            
-        }
-        
+            break fib;   
+        }     
     }
-    return evenArr;
+    //can return even array by including evenArr
+    // return [evenArr, evenSum];
+    return evenSum;
 }
 //Personal note to myself for desired output:
 //1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+
+//Testing code output
+console.log(eulerFibo(1000))
 //Finding the full array for even numbers less than 4M
 // console.log(eulerFibo(4000000));
 
@@ -154,17 +160,30 @@ function findNeedle(arr) {
     // YOUR CODE HERE
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === 'needle') {
-            return console.log(`found the needle at position ${i}`)
+            return `found the needle at position ${i}`
         }
     }
 }
-findNeedle(['hay', 'rolex', 'aMillionDollars', 'junk', 'corvette', 'hayHayHay', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk', 'meaningOfLife','moreStuff'])
+/*
+Ummm... there's so much cooler stuff than the needle...
+But this finds the needle.
+*/ 
+// console.log(findNeedle(['hay', 'rolex', 'aMillionDollars', 'junk', 'corvette', 'hayHayHay', 'rumpelstiltskin', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk', 'meaningOfLife', 'moreStuff']))
+// console.log(findNeedle(['needle', 'in', 'haystack']))
 
 // 10. sumPositive
 function sumPositive(arr) {
     // YOUR CODE HERE
-
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
 }
+//testing function:
+// console.log(sumPositive([1, -4, 7, -9, 0, 5, 12]))
 
 module.exports = {
     calculateCube,
