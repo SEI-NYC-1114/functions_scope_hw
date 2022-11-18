@@ -5,69 +5,79 @@
 // 1. 3. What are the implications of the ability of a function to return a value?
 
 // 2. calculateCube
-function calculateCube(num) {
-    // YOUR CODE HERE
-    return Math.pow(num, 3); 
+// function calculateCube(num) {
+//     // YOUR CODE HERE
+//     return Math.pow(num, 3); 
     
     
-}
-console.log(calculateCube(5));
-// 3. isAVowel
-function isAVowel(letter) {
-    // YOUR CODE HERE
-}
+// }
+// console.log(calculateCube(5));
+// // 3. isAVowel
+// function isAVowel(letter) {
+//     // YOUR CODE HERE
+//     if(letter.toLowerCase()=== "a" || letter.toLowerCase()==="e"){
+//         return true; 
+//     }else if(letter.toLowerCase()==="i"|| letter.toLowerCase()==="o"){ return true;
+//     }else if(letter.toLowerCase()==="u"){ return true;
+// }else {return false}
+// }
+// console.log(isAVowel("a"))
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    let arr = [];
+    arr.push(word1.length);
+    arr.push(word2.length);
+    return arr;
 }
-
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
-function sumArray(arr) {
-    // YOUR CODE HERE
-}
+// function sumArray(arr) {
+//     // YOUR CODE HERE
+// }
 
-// 6.1 checkPrime
-function checkPrime(num) {
-    // YOUR CODE HERE
-}
+// // 6.1 checkPrime
+// function checkPrime(num) {
+//     // YOUR CODE HERE
+// }
 
-// 6.2 printPrimes
-function printPrimes(num) {
-    // YOUR CODE HERE
-}
+// // 6.2 printPrimes
+// function printPrimes(num) {
+//     // YOUR CODE HERE
+// }
 
-// 7. printLongestWord
-function printLongestWord(arr) {
-    // YOUR CODE HERE
-}
+// // 7. printLongestWord
+// function printLongestWord(arr) {
+//     // YOUR CODE HERE
+// }
 
-// BONUS!
+// // BONUS!
 
-// 8. eulerFibo
-function eulerFibo(num) {
-    // YOUR CODE HERE
-}
+// // 8. eulerFibo
+// function eulerFibo(num) {
+//     // YOUR CODE HERE
+// }
 
-// 9. findNeedle
-function findNeedle(arr) {
-    // YOUR CODE HERE
-}
+// // 9. findNeedle
+// function findNeedle(arr) {
+//     // YOUR CODE HERE
+// }
 
-// 10. sumPositive
-function sumPositive(arr) {
-    // YOUR CODE HERE
-}
+// // 10. sumPositive
+// function sumPositive(arr) {
+//     // YOUR CODE HERE
+// }
 
-module.exports = {
-    calculateCube,
-    isAVowel,
-    getTwoLengths,
-    sumArray,
-    checkPrime,
-    printPrimes,
-    printLongestWord,
-    eulerFibo,
-    findNeedle,
-    sumPositive
-};
+// module.exports = {
+//     calculateCube,
+//     isAVowel,
+//     getTwoLengths,
+//     sumArray,
+//     checkPrime,
+//     printPrimes,
+//     printLongestWord,
+//     eulerFibo,
+//     findNeedle,
+//     sumPositive
+// };
