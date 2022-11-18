@@ -65,7 +65,8 @@
 
 // console.log(checkPrime(4));
 
-// // 6.2 printPrimes
+// // 6.2 printPrimes //NOT WORKING 
+
 // function printPrimes(num) {
 //     for (let i = 1; i <= num; i++) { 
 //         let squareRoot = Math.sqrt(i); 
@@ -80,15 +81,17 @@
 
 // printPrimes(10)
 
-// 7. printLongestWord
+// 7. printLongestWord // NOT WORKING 
+
+let currentLongest = []; 
 function printLongestWord(arr) {
-    let currentLongest = []; 
     for (let i = 0; i < arr.length; i++) {
         let currentWord = arr[i]; 
         if (currentWord.length > currentLongest.length) {
             currentLongest = currentWord; 
-        } return currentLongest; 
-    } return arr; 
+        }
+    }
+    return currentLongest;
 }
 
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
