@@ -10,75 +10,88 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-  if (num.toString().length > 1 || typeof num !== 'number') return 'must enter a single number'
+  if (num.toString().length > 1 || typeof num !== 'number') {
+    return 'must enter a single number'
+  }
   return Math.pow(num, 3)
 }
 
-// console.log(calculateCube())
+// console.log(calculateCube(5))
 
 // 3. isAVowel
 function isAVowel(letter) {
-  if (letter.length > 1 || typeof letter !== 'string') return 'must enter a string with a single character'
+  if (letter.length > 1 || typeof letter !== 'string') {
+    return 'must enter a string with a single character'
+  }
   const matchedLetter = letter.match(/[AEIOUaeiou]/g)
   return matchedLetter ? true : false
 }
 
-// console.log(isAVowel())
+// console.log(isAVowel('a'))
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-  if (typeof word1 !== 'string'|| typeof word2 !== 'string') return 'must enter strings'
+  if (typeof word1 !== 'string' || typeof word2 !== 'string') {
+    return 'must enter strings'
+  }
   return [word1.length, word2.length]
 }
 
-// console.log(getTwoLengths())
+// console.log(getTwoLengths('Hank', 'Hippopopalous'))
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+  if (!Array.isArray(arr)) {
+    return 'must enter an array'
+  }
+  let sum = 0
+  for (number of arr) sum += number
+  return sum
 }
+
+// console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+  // YOUR CODE HERE
 }
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+  // YOUR CODE HERE
 }
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+  // YOUR CODE HERE
 }
 
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+  // YOUR CODE HERE
 }
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // YOUR CODE HERE
+  // YOUR CODE HERE
 }
 
 // 10. sumPositive
 function sumPositive(arr) {
-    // YOUR CODE HERE
+  // YOUR CODE HERE
 }
 
 module.exports = {
-    calculateCube,
-    isAVowel,
-    getTwoLengths,
-    sumArray,
-    checkPrime,
-    printPrimes,
-    printLongestWord,
-    eulerFibo,
-    findNeedle,
-    sumPositive
-};
+  calculateCube,
+  isAVowel,
+  getTwoLengths,
+  sumArray,
+  checkPrime,
+  printPrimes,
+  printLongestWord,
+  eulerFibo,
+  findNeedle,
+  sumPositive
+}
