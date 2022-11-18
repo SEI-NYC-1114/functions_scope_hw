@@ -65,36 +65,36 @@
 
 // console.log(checkPrime(4));
 
-// // 6.2 printPrimes //NOT WORKING 
+// 6.2 printPrimes //NOT WORKING 
 
-// function printPrimes(num) {
-//     for (let i = 1; i <= num; i++) { 
-//         let squareRoot = Math.sqrt(i); 
-//         for (let j = 2; j < squareRoot; j++) {
-//             if (squareRoot % j == 0) {
-//                 console.log(i);
-//             }
-//         } 
-//     } 
-//     return num; 
-// }
+function printPrimes(num) {
+    // let squareRoot = 0; 
+    for (let i = 1; i <= num; i++) { 
+        let squareRoot = Math.sqrt(i);
+        for (let j = 0; j <= Math.floor(squareRoot); j++) {
+            if (squareRoot % j === 0) {
+                return i;
+            } 
+        } 
+    }
+}
 
-// printPrimes(10)
+console.log(printPrimes(10))
 
 // 7. printLongestWord // NOT WORKING 
 
-let currentLongest = []; 
-function printLongestWord(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        let currentWord = arr[i]; 
-        if (currentWord.length > currentLongest.length) {
-            currentLongest = currentWord; 
-        }
-    }
-    return currentLongest;
-}
+// let currentLongest = []; 
+// function printLongestWord(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         let currentWord = arr[i]; 
+//         if (currentWord.length > currentLongest.length) {
+//             currentLongest = currentWord; 
+//         }
+//     }
+//     return currentLongest;
+// }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
@@ -119,8 +119,8 @@ module.exports = {
     //getTwoLengths,
    // sumArray,
     //checkPrime,
-    //printPrimes,
-    printLongestWord,
+    printPrimes,
+    //printLongestWord,
     eulerFibo,
     findNeedle,
     sumPositive
