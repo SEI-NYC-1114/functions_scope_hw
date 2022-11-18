@@ -44,8 +44,11 @@ function sumArray(arr) {
   if (!Array.isArray(arr)) {
     return 'must enter an array'
   }
+
   let sum = 0
-  for (number of arr) sum += number
+  for (number of arr) {
+    sum += number
+  }
   return sum
 }
 
@@ -53,13 +56,34 @@ function sumArray(arr) {
 
 // 6.1 checkPrime
 function checkPrime(num) {
-  // YOUR CODE HERE
+  if (typeof num !== 'number') {
+    return 'must enter a number'
+  }
+
+  const sqrt = Math.sqrt(num)
+  for (let i = 2; i <= sqrt; i++) {
+    if (num % i === 0) return false
+  }
+  return num > 1
 }
+
+// console.log(checkPrime(9))
 
 // 6.2 printPrimes
 function printPrimes(num) {
-  // YOUR CODE HERE
+  if (typeof num !== 'number') {
+    return 'must enter a number'
+  }
+
+  const primesArr = []
+  for (let i = 2; i <= num; i++) {
+    if (checkPrime(i)) primesArr.push(i)
+  }
+
+  primesArr.forEach(prime => console.log(prime))
 }
+
+console.log(printPrimes(97))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
