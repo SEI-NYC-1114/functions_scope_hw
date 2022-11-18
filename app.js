@@ -42,7 +42,7 @@ function getTwoLengths(word1, word2) {
     return [word1.length, word2.length] 
 }
 
-// console.log(getTwoLengths("Hank", "Hippopopalous")); //testing code
+console.log(getTwoLengths("Hank", "Hippopopalous")); //testing code
 
 // 5. sumArray
 function sumArray(arr) {
@@ -54,7 +54,7 @@ function sumArray(arr) {
     return sum;
 }
 
-// console.log(sumArray([1, 2, 3, 4, 5, 6])); //testing code
+console.log(sumArray([1, 2, 3, 4, 5, 6])); //testing code
 
 // 6.1 checkPrime
 function checkPrime(num) {
@@ -67,7 +67,7 @@ function checkPrime(num) {
     return true;
 }
 
-// console.log(checkPrime(11)); //testing code
+console.log(checkPrime(11)); //testing code
 
 // 6.2 printPrimes
 function printPrimes(num) {
@@ -79,7 +79,7 @@ function printPrimes(num) {
     }
 }
 
-// console.log(printPrimes(9)); //testing code
+console.log(printPrimes(9)); //testing code
 
 // 7. printLongestWord
 function printLongestWord(arr) {
@@ -96,7 +96,7 @@ function printLongestWord(arr) {
     return longestWord;
 }
 
-// console.log(printLongestWord(["BoJack", "Princess", "Apple", "ThisATieWord", "Diane", "a", "Max", "Peanutbutter", "big", "blob"])); //test code
+console.log(printLongestWord(["BoJack", "Princess", "Apple", "ThisATieWord", "Diane", "a", "Max", "Peanutbutter", "big", "blob"])); //test code
 
 
 // BONUS!
@@ -139,7 +139,7 @@ function eulerFibo(num) {
 //1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 
 //Testing code output
-// console.log(eulerFibo(1000))
+console.log(eulerFibo(1000))
 //Finding the full array for even numbers less than 4M
 // console.log(eulerFibo(4000000));
 
@@ -168,8 +168,8 @@ function findNeedle(arr) {
 Ummm... there's so much cooler stuff than the needle...
 But this finds the needle.
 */ 
-// console.log(findNeedle(['hay', 'rolex', 'aMillionDollars', 'junk', 'corvette', 'hayHayHay', 'rumpelstiltskin', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk', 'meaningOfLife', 'moreStuff']))
-// console.log(findNeedle(['needle', 'in', 'haystack']))
+console.log(findNeedle(['hay', 'rolex', 'aMillionDollars', 'junk', 'corvette', 'hayHayHay', 'rumpelstiltskin', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk', 'meaningOfLife', 'moreStuff']))
+console.log(findNeedle(['needle', 'in', 'haystack']))
 
 // 10. sumPositive
 function sumPositive(arr) {
@@ -183,7 +183,7 @@ function sumPositive(arr) {
     return sum;
 }
 //testing function:
-// console.log(sumPositive([1, -4, 7, -9, 0, 5, 12]))
+console.log(sumPositive([1, -4, 7, -9, 0, 5, 12]))
 
 module.exports = {
     calculateCube,
