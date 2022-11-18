@@ -25,12 +25,20 @@ function isAVowel(letter) {
         return false;
     }
 }
-console.log(isAVowel("a"));
+//console.log(isAVowel("a"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    let lenArr=[];
+    let len1 = word1.length;
+    lenArr.push(len1);
+    let len2 = word2.length;
+    lenArr.push(len2);
+    
+    return lenArr;
 }
+console.log(getTwoLengths("Hank", "Hippopopalous")); 
 
 // 5. sumArray
 function sumArray(arr) {
