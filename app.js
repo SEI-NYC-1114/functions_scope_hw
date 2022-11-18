@@ -155,7 +155,14 @@ eulerFibo(4000000);
 // 9. findNeedle
 function findNeedle(arr) {
   // YOUR CODE HERE
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "needle") {
+      console.log(`found the needle at postition ${i}`);
+    }
+  }
 }
+findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]);
 
 // 10. sumPositive
 function sumPositive(arr) {
