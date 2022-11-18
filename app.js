@@ -23,20 +23,25 @@
 // console.log(calculateCube(5));
 
 // 3. isAVowel
-let vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
-function isAVowel(letter) {
-    for (let i = 0; i <= vowels.length-1; i++) {
-        if (isAVowel = vowels[i]) return true; 
-    } return false;
-}
+// let vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+// function isAVowel(letter) {
+//     for (let i = 0; i <= vowels.length-1; i++) {
+//         if (isAVowel = vowels[i]) return true; 
+//     } return false;
+// }
 
-console.log(isAVowel("a"));
+// console.log(isAVowel("a"));
 
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    word1 = [word1.length]; 
+    word1.push(word2.length); 
+    return word1;
 }
+
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+
 
 // 5. sumArray
 function sumArray(arr) {
@@ -77,7 +82,7 @@ function sumPositive(arr) {
 
 module.exports = {
     //calculateCube,
-    isAVowel,
+    //isAVowel,
     getTwoLengths,
     sumArray,
     checkPrime,
