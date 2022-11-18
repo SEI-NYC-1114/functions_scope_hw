@@ -157,20 +157,24 @@ describe("eulerFibo() takes in a number and finds the sum of even numbers in a f
 
 // 9. findNeedle
 describe("findNeedle() returns 'Found the needle at position ${index}'", () => {
-    expect(findNeedle(["needle", "test"])).toBeDefined();
+  expect(findNeedle(["needle", "test"])).toBeDefined();
 
-    it("['needle', 'in', 'haystack'] should return 'found the needle at position 0'", () => {
-        expect(findNeedle(["needle", "in", "haystack"])).toMatch(/needle/);
-        expect(findNeedle(["needle", "in", "haystack"])).toBe("found the needle at position 0");
-    });
+  it("['needle', 'in', 'haystack'] should return 'found the needle at position 0'", () => {
+    expect(findNeedle(["needle", "in", "haystack"])).toMatch(/needle/);
+    expect(findNeedle(["needle", "in", "haystack"])).toBe(
+      "found the needle at position 0"
+    );
+  });
 
-    it("['found', 'the', 'needle'] should return 'found the needle at position 2'", () => {
-        expect(findNeedle(["needle", "in", "haystack"])).toMatch(/needle/);
-        expect(findNeedle(["found", "the", "needle"])).toBe("found the needle at position 2");
-    });
+  it("['found', 'the', 'needle'] should return 'found the needle at position 2'", () => {
+    expect(findNeedle(["needle", "in", "haystack"])).toMatch(/needle/);
+    expect(findNeedle(["found", "the", "needle"])).toBe(
+      "found the needle at position 2"
+    );
+  });
 });
 
-10. sumPositive
+// 10. sumPositive
 describe("sumPositive() returns the sum of only the positive numbers in an array", () => {
   expect(sumPositive([1, -1])).toBeDefined();
 
