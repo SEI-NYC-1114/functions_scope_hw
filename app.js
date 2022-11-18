@@ -34,19 +34,26 @@
 
 
 // 4. getTwoLengths
-function getTwoLengths(word1, word2) {
-    word1 = [word1.length]; 
-    word1.push(word2.length); 
-    return word1;
-}
+// function getTwoLengths(word1, word2) {
+//     word1 = [word1.length]; 
+//     word1.push(word2.length); 
+//     return word1;
+// }
 
-console.log(getTwoLengths("Hank", "Hippopopalous"));
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    let arrSum = 0; 
+    for (let i = 0; i < arr.length; i++) {
+        arrSum = arrSum + arr[i];
+    }
+    return arrSum; 
 }
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
+//=> 21
 
 // 6.1 checkPrime
 function checkPrime(num) {
@@ -83,7 +90,7 @@ function sumPositive(arr) {
 module.exports = {
     //calculateCube,
     //isAVowel,
-    getTwoLengths,
+    //getTwoLengths,
     sumArray,
     checkPrime,
     printPrimes,
