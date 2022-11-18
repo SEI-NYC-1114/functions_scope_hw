@@ -89,7 +89,7 @@ function printLongestWord(arr) {
   };
 
 // BONUS!
-
+console.log("kan")
 // 8. eulerFibo
 function eulerFibo(num) {
     // YOUR CODE HERE
