@@ -71,22 +71,33 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
 // 8. eulerFibo
 function eulerFibo(num) {
     let arr = [];
-    let fibo = 1;
-    for(let i = 0; i <= num; i+=0) {
-        if (i === 0) {
-            arr.push(i + 1);
-            fibo += arr[i];
+    let n1 = 0;
+    let n2 = 1;
+    let next = 0
+    let sum = 0
+    while (next <= num) {
+        // console.log(next);
+        next = n1 + n2;
+        n1 = n2;
+        n2 = next;
+        if (next % 2 === 0 && next !== 0 && next <= num) {
+            arr.push(next)
             console.log(arr);
-            i += fibo
-        } else if (i !== 0) {
-            arr.push(i);
-            fibo += arr[i];
-            console.log(arr);
-            i += fibo
         }
+
+        // console.log(n1)
+        // console.log(n2)
     }
-}
- eulerFibo(99)
+    for(let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+
+    }
+    return sum
+    }
+        
+
+
+ console.log(eulerFibo(99))
 //  cant figure this one out oof
 
 // 9. findNeedle
