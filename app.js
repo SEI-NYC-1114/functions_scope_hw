@@ -44,21 +44,26 @@
 
 
 // 5. sumArray
-function sumArray(arr) {
-    let arrSum = 0; 
-    for (let i = 0; i < arr.length; i++) {
-        arrSum = arrSum + arr[i];
-    }
-    return arrSum; 
-}
+// function sumArray(arr) {
+//     let arrSum = 0; 
+//     for (let i = 0; i < arr.length; i++) {
+//         arrSum = arrSum + arr[i];
+//     }
+//     return arrSum; 
+// }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
 //=> 21
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    let squareRoot = Math.sqrt(num); 
+    for (let i = 2; i < squareRoot; i++) { 
+        if (squareRoot % i != 0) return 'Not a prime number :(';
+    } return 'ITS PRIME CHIEF';
 }
+
+console.log(checkPrime(4));
 
 // 6.2 printPrimes
 function printPrimes(num) {
@@ -91,7 +96,7 @@ module.exports = {
     //calculateCube,
     //isAVowel,
     //getTwoLengths,
-    sumArray,
+   // sumArray,
     checkPrime,
     printPrimes,
     printLongestWord,
