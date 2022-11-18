@@ -153,6 +153,7 @@ eulerFibo(4000000);
 // c    b a
 
 // 9. findNeedle
+
 function findNeedle(arr) {
   // YOUR CODE HERE
 
