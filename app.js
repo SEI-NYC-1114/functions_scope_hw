@@ -16,12 +16,17 @@ function calculateCube(num) {
     return volume;
 }
 
+// 
 console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    let capLetter = letter.toUpperCase();
+    if (capLetter === "A" || capLetter === "E" || capLetter === "I" || capLetter === "O" || capLetter === "U") {
+        return true;
+    } return false;
 }
+// console.log(isAVowel("O"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
