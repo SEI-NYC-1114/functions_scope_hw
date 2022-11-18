@@ -94,7 +94,7 @@ console.log("kan")
 function eulerFibo(num) {
     // YOUR CODE HERE
 }
-
+console.log("test")
 // 9. findNeedle
 function findNeedle(arr) {
     // YOUR CODE HERE
