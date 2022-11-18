@@ -14,6 +14,8 @@ function calculateCube(num) {
   return Math.pow(num, 3)
 }
 
+// console.log(calculateCube())
+
 // 3. isAVowel
 function isAVowel(letter) {
   if (letter.length > 1 || typeof letter !== 'string') return 'must enter a string with a single character'
@@ -21,10 +23,15 @@ function isAVowel(letter) {
   return matchedLetter ? true : false
 }
 
+// console.log(isAVowel())
+
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+  if (typeof word1 !== 'string'|| typeof word2 !== 'string') return 'must enter strings'
+  return [word1.length, word2.length]
 }
+
+// console.log(getTwoLengths())
 
 // 5. sumArray
 function sumArray(arr) {
