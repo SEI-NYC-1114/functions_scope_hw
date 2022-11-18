@@ -15,17 +15,23 @@
 //i.e. use the same function with different variable values. 
 
 // 2. calculateCube
-function calculateCube(num) {
-    num = num * num * num;
-    return num;
-}
+// function calculateCube(num) {
+//     num = num * num * num;
+//     return num;
+// }
 
-console.log(calculateCube(5));
+// console.log(calculateCube(5));
 
 // 3. isAVowel
+let vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    for (let i = 0; i <= vowels.length-1; i++) {
+        if (isAVowel = vowels[i]) return true; 
+    } return false;
 }
+
+console.log(isAVowel("a"));
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
@@ -70,7 +76,7 @@ function sumPositive(arr) {
 }
 
 module.exports = {
-    calculateCube,
+    //calculateCube,
     isAVowel,
     getTwoLengths,
     sumArray,
