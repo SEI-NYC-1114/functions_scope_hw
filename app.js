@@ -11,27 +11,31 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    // let cubed = 0;
-    // for (let i = 1; i <= num; i++) {
-    //     cubed += i ** 3;
-    // }
-    // return cubed;
-
     return num **3;
-    // YOUR CODE HERE
 }
 
 console.log(calculateCube(5));
 
 // 3. isAVowel
+
 function isAVowel(letter) {
-    // YOUR CODE HERE
+for (let i of "aeiouAEIOU"){
+    if (letter.endsWith(i)){
+        return true;
+    }
 }
+return false;
+}
+
+console.log(isAVowel("a"));
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
 }
+
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
