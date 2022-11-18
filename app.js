@@ -6,16 +6,19 @@
 // "return" will return the value that follows it, console.log will log the value to the console.
 
 // 1. 3. What are the implications of the ability of a function to return a value?
-// 
+// The return keyword will return a value and exit the function.
 
 // 2. calculateCube
 function calculateCube(num) {
-  console.log(Math.pow(num, 3))
+  if (num.toString().length > 1 || typeof num !== 'number') return 'must enter a single number'
+  return Math.pow(num, 3)
 }
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+  if (letter.length > 1 || typeof letter !== 'string') return 'must enter a string with a single character'
+  const matchedLetter = letter.match(/[AEIOUaeiou]/g)
+  return matchedLetter ? true : false
 }
 
 // 4. getTwoLengths
