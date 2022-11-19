@@ -2,7 +2,7 @@
 
 // // 1.2. Within a function, what is the difference between return and console.log?
 // //console.log is used to print information to the console and return sends a value to where the call was made
-// // 1. 3. What are the implications of the ability of a function to return a value?
+// // 1. 3. What are the implications of the ability of a function to return a value? return ends the function and returns it
 
 // // 2. calculateCube
 // function calculateCube(num) {
@@ -34,7 +34,7 @@
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
 // // 5. sumArray
 // function sumArray(arr) {
-//     // YOUR CODE HERE
+     // YOUR CODE HERE
 //     let sum = 0
 //     for(let i = 0; i < arr.length; i++){
 //         sum += arr[i];
@@ -53,12 +53,18 @@ for (let i = 2; i<= Math.floor(Math.sqrt(num)); i++) {
 }
  return true;
 }
-console.log(checkPrime(3));
-// // 6.2 printPrimes
-// function printPrimes(num) {
-//     // YOUR CODE HERE
-// }
+console.log(checkPrime(10));
+// // // 6.2 printPrimes
+ function printPrimes(num) {
+ for(let i = 2; i <= num; i++) {
+if (checkPrime(i)=== true){
+    console.log(i);
+}
+ }
 
+// YOUR CODE HERE
+ }
+printPrimes(97)
 // // 7. printLongestWord
 // function printLongestWord(arr) {
 //     // YOUR CODE HERE
