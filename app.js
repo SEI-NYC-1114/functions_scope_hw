@@ -44,32 +44,35 @@
 // console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // // 6.1 checkPrime
-function checkPrime(num) {
+//function checkPrime(num) {
 //     // YOUR CODE HERE
-for (let i = 2; i<= Math.floor(Math.sqrt(num)); i++) {
-    if (num % i === 0) {
-        return false;
-    }
-}
- return true;
-}
-console.log(checkPrime(10));
-// // // 6.2 printPrimes
- function printPrimes(num) {
- for(let i = 2; i <= num; i++) {
-if (checkPrime(i)=== true){
-    console.log(i);
-}
- }
+// for (let i = 2; i<= Math.floor(Math.sqrt(num)); i++) {
+//     if (num % i === 0) {
+//         return false;
+//     }
+// }
+//  return true;
+// }
+// console.log(checkPrime(10));
+// // // // 6.2 printPrimes
+//  function printPrimes(num) {
+//  for(let i = 2; i <= num; i++) {
+// if (checkPrime(i)=== true){
+//     console.log(i);
+// }
+//  }
 
 // YOUR CODE HERE
- }
-printPrimes(97)
-// // 7. printLongestWord
-// function printLongestWord(arr) {
-//     // YOUR CODE HERE
 // }
+// printPrimes(97)
+// // 7. printLongestWord
+function printLongestWord(arr) {
+//     // YOUR CODE HERE
+let logestWord = arr.split("").sort(function(a, b) { return b.length - a.length;});
+return LongestWord [0].length;
 
+ }
+console.log("BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob")
 // // BONUS!
 
 // // 8. eulerFibo
