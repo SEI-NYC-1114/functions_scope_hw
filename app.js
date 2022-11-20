@@ -127,8 +127,12 @@ function findNeedle(arr) {
 
 // 10. sumPositive
 function sumPositive(arr) {
-    // YOUR CODE HERE
-}
+  let arrSum = 0
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) arrSum += arr[i]
+  };
+  return arrSum
+};
 
 module.exports = {
     calculateCube,
