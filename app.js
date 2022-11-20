@@ -72,16 +72,22 @@ function printPrimes(num) {
     }
 }
 
-console.log(printPrimes(96));
+// console.log(printPrimes(96));
 
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // for (let i = 1; i < arr.length; i++); {
-    //     let max = arr[i].length;
-    // }  
+    let longest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i].length > longest.length) {
+            longest = arr[i];
+        }
+    }
+    return longest;
 }
-//console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+
 // BONUS!
 
 // 8. eulerFibo
