@@ -48,7 +48,7 @@ function checkPrime(num) {
     return num;
 }
 
-// console.log(checkPrime(71))
+console.log(checkPrime(45))
 
 // 6.2 printPrimes
 function printPrimes(num) {
