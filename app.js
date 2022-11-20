@@ -92,28 +92,28 @@ function printLongestWord(arr) {
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    let current = 0;
-    let fib = [0 ,1];
-    for (let i = 1; i < fib.length; i++) {
-        current = fib[i] + fib[i - 1]
-        if (current <= num) {
-            fib.push(current);
-        }
-    }
-    return fib;
+    // let current = 0;
+    // let fib = [0 , 1];
+    // for (let i = 1; i < fib.length; i++) {
+    //     current = fib[i] + fib[i - 1]
+    //     if (current <= num && current % 2 === 0) {
+    //         fib.push(current);
+    //     }
+    // }
+    // return fib;
 }
 
- console.log(eulerFibo(96));
+// console.log(eulerFibo(500));
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // for (let i = 0; i <= arr.length; i++) {
-    //     if (arr[i] === "needle") {
-    //     console.log(`The needle was found at position ${arr[i]}`);
-    //     }
-    // }
+    for (let i = 0; i <= arr.length; i++) {
+        if (arr[i] === "needle") {
+        console.log(`The needle was found at position ${[i]}`);
+        }
+    }
 }
-// console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
 
 // 10. sumPositive
 function sumPositive(arr) {
