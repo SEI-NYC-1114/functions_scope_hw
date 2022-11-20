@@ -120,7 +120,7 @@ The commit message should read: <br>
 Write a function `printLongestWord` that accepts a single argument, an **array of strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
 
 ```javascript
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+(["BoJack", "Princeconsole.log(printLongestWordss", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 ```
 
 > => "Peanutbutter"

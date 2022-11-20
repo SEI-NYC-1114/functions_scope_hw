@@ -38,7 +38,7 @@ function getTwoLengths(word1, word2) {
     chipotle.push(word2Len);
     return chipotle
 }
-console.log(getTwoLengths("valorant", "sucks"))
+console.log(getTwoLengths("utah", "alaska"))
 
 
 
@@ -53,23 +53,58 @@ console.log(getTwoLengths("valorant", "sucks"))
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    let sum = 0;
+    for (i = 0; i <arr.length; i++) {
+        sum = sum + arr[i]
+
+    }
+    return sum
+    // YO
 }
+let phone = [1,2,3] 
+sumArray(phone) 
+console.log(sumArray(phone))
+    
+
+
+
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
-}
+    for(let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
+     if (num % i === 0) {
+   return false;
+    }
+} return true; 
+ }
+console.log(checkPrime(10));
+
 
 // 6.2 printPrimes
 function printPrimes(num) {
+    for (let i = 2; i < num; i++) {
+        if (checkPrime(i) === true) {
+  console.log(i)
+    }
     // YOUR CODE HERE
+  } 
 }
-
+console.log(printPrimes(97));
 // 7. printLongestWord
 function printLongestWord(arr) {
+let theLongestWord;
+let lengthOftheLongestWord = 0; 
+for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i].length)
+    if(arr[i].length > lengthOftheLongestWord) {
+        theLongestWord = arr[i]
+        lengthOftheLongestWord = arr[i].length
+    }
+}return theLongestWord
     // YOUR CODE HERE
+
 }
+console.log (printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
