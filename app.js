@@ -68,14 +68,17 @@ function checkPrime(num) {
 // 6.2 printPrimes
 function printPrimes(num) {
   // YOUR CODE HERE
-  for (let i = 2; i <= num; i++) {
-    if (checkPrime(i)) {
-      console.log(i);
-    }
+  if (checkPrime(num) === true) {
+    return num;
+  } else {
+    //console.log("It is not prime number");
+    return "It is not prime number";
   }
 }
-printPrimes(97);
+//console.log("Answer 6.2");
+console.log(printPrimes(96));
 // 7. printLongestWord
+console.log("Amswer 7");
 function printLongestWord(arr) {
   // YOUR CODE HERE
   let longestWord = [];
