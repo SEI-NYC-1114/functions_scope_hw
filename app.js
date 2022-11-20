@@ -48,7 +48,7 @@ function checkPrime(num) {
     return num;
 }
 
-console.log(checkPrime(71))
+// console.log(checkPrime(71))
 
 // 6.2 printPrimes
 function printPrimes(num) {
@@ -62,7 +62,7 @@ function printPrimes(num) {
     }
     console.log(primeArray);
 }
-// printPrimes(53)
+printPrimes(45)
 
 // 7. printLongestWord
 function printLongestWord(arr) {
