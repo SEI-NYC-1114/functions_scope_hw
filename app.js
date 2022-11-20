@@ -89,12 +89,35 @@ function printLongestWord(arr) {
   };
 
 // BONUS!
-console.log("kan")
+
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
-}
-console.log("test")
+  let fsList = [1];
+  let newFsNum;
+  let fsLastIndex = 0;
+
+  loop1:while (fsList[fsLastIndex] <= num) {
+    fsLastIndex = fsList.length - 1;
+    fsLastNum = fsList[fsLastIndex];
+    let fsSecToLastNum = fsList[fsLastIndex - 1];
+    if (fsSecToLastNum === undefined) fsSecToLastNum = 0;
+    newFsNum = fsLastNum + fsSecToLastNum;
+    if (newFsNum > num) break loop1
+      else fsList.push(newFsNum)
+  };
+  let evenFsList = [];
+  let sumOfEvenFsList = 0
+  for (let i = 0; i < fsList.length; i++) {
+    if (fsList[i] % 2 === 0) {
+      evenFsList.push(fsList[i]);
+    }
+  };
+  for (let i = 0; i < evenFsList.length; i++) sumOfEvenFsList += evenFsList[i];
+  return [fsList, evenFsList, sumOfEvenFsList]
+};
+
+console.log(eulerFibo(4000000))
+
 // 9. findNeedle
 function findNeedle(arr) {
     // YOUR CODE HERE
