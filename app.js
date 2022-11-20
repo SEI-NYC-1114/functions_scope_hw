@@ -50,17 +50,52 @@ function sumArray(arr) {
     return sum;
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+//console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
+    let prime = true;
+    if (num === 0 || num === 1){
+        console.log(`${num} : Neither prime nor not prime`);
+        return;
+    } else if (num === 2){
+        return true; 
+    } else {
+        for(let i=2; i<=(Math.sqrt(num)); i++){
+            if ((num%i) === 0){
+                prime = false;
+                return prime;
+            }
+            else
+                prime = true;
+        }
+    }
+    return prime;
 }
+
+console.log(checkPrime(2017)); //true
+console.log(checkPrime(97)); // true
+console.log(checkPrime(20)); // false
+console.log(checkPrime(105)); // false
+console.log(checkPrime(89));// true
+console.log(checkPrime(2));// true
 
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
+    for (let i=2; i<=num; i++){
+        if (checkPrime(i)===true){
+            console.log(i);
+        }
+    }
 }
+
+printPrimes(97);
+printPrimes(9);
+printPrimes(2);
+
+
 
 // 7. printLongestWord
 function printLongestWord(arr) {
