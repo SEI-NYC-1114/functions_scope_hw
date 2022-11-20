@@ -54,20 +54,18 @@ function checkPrime(num) {
     } return true;
 }
 
-// console.log(checkPrime(4));
+// console.log(checkPrime(3));
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    function checkPrime(num) {
-        for (let i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i === 0) {
-                return false;
-            }
+    for (let i = 2; i <= num; i++) {
+        if (checkPrime(i) === true) {
+            console.log(i)
         } 
-    } 
+    } return ''
 }
 
-// console.log(printPrimes(19));
+// console.log(printPrimes(97));
 
 // 7. printLongestWord
 function printLongestWord(arr) {
@@ -80,25 +78,46 @@ function printLongestWord(arr) {
     return word;
     }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+//console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
-}
+    console.log(1);
+    for (let i = 0; i <= num; i+) {
+} 
+
+console.log(eulerFibo(100));
 
 // 9. findNeedle
+let find_needle = ['hay', 'junk', 'hay', 'hay', 'moreJunk', 'randomJunk', 'needle'];
+
 function findNeedle(arr) {
-    // YOUR CODE HERE
+    for (let i = 0; i < arr.length; i++) {
+        let hereItIs = `found the needle at position ${i}`;
+        if (arr[i] === "needle") {
+            return hereItIs;
+        }
+    }
 }
 
+// console.log(findNeedle(find_needle));
+
 // 10. sumPositive
+let arrSomeNums = [0.5, 1, -4, 7, 12, 0, 14, -53, 9, -1, -.02345, 19];
+
 function sumPositive(arr) {
-    // YOUR CODE HERE
-}
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] <= 0) {
+            arr.splice(i, 1);
+        } let sum = 0;
+        sum += arr[i];
+        }
+    }   
+
+// console.log(sumPositive(arrSomeNums));
 
 module.exports = {
     calculateCube,
