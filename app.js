@@ -35,11 +35,11 @@ function sumArray(arr) {
     // YOUR CODE HERE
     let arrVal = 0;
     for (let i = 0; i < arr.length; i++) {
-        arrVal = arrVal + arr[i]
+        arrVal = arrVal + arr[i];
     }
-    return arrVal
+    return arrVal;
 }
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
@@ -72,8 +72,22 @@ function printPrimes(num) {
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
-
+    let wordLengths = [];
+    for (let i = 0; i < arr.length; i++) {
+        let wordLength = arr[i].length;
+        wordLengths.push(wordLength);
+    }
+    console.log(wordLengths);
+    let longestWord = '';
+    for (let i = 0; i < arr.length; i++) {
+        if (longestWord.length < arr[i].length) {
+            longestWord = arr[i];
+        }
+    }
+    console.log(longestWord);
 }
+
+printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]);
 
 // BONUS!
 
