@@ -14,9 +14,13 @@ function calculateCube(num) {
 console.log(calculateCube(5));
 
 // 3. isAVowel
+
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    let x= "aeiouAEIOU";
+    return (x.indexOf(letter) != -1) ? true : false;
 }
+console.log(isAVowel("A"))
+//If indexof letter exists within string x, then it should return not -1.
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
