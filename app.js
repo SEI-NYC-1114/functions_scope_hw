@@ -86,20 +86,30 @@ function printLongestWord(arr) {
     return longest;
 }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    let current = 0;
+    let fib = [0 ,1];
+    for (let i = 1; i < fib.length; i++) {
+        current = fib[i] + fib[i - 1]
+        if (current <= num) {
+            fib.push(current);
+        }
+    }
+    return fib;
 }
+
+ console.log(eulerFibo(96));
 
 // 9. findNeedle
 function findNeedle(arr) {
     // for (let i = 0; i <= arr.length; i++) {
-    //     if (arr[i] === "needle"); {
-    //     return arr[i];
+    //     if (arr[i] === "needle") {
+    //     console.log(`The needle was found at position ${arr[i]}`);
     //     }
     // }
 }
