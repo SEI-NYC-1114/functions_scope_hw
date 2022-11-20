@@ -67,12 +67,10 @@ function checkPrime(num) {
 }
 // 6.2 printPrimes
 function printPrimes(num) {
-  // YOUR CODE HERE
-  if (checkPrime(num) === true) {
-    return num;
-  } else {
-    //console.log("It is not prime number");
-    return "It is not prime number";
+  for (let i = 2; i <= num; i++) {
+    if (checkPrime(i)) {
+      console.log(i);
+    }
   }
 }
 //console.log("Answer 6.2");
@@ -108,33 +106,37 @@ console.log(
 function eulerFibo(num) {
   // YOUR CODE HERE
   // 0 1 1 2 3 5
+  console.log("-- print the Fibonacci sequence up to " + num);
   const even = [];
   let a = 0;
   let b = 1;
   let c = 1;
   sum = 0;
-  console.log(0);
+  //console.log(0);
   while (c < num) {
-    c = a + b;
-    console.log(c);
     if (c % 2 === 0) {
       even.push(c);
+      sum = sum + c;
     }
+    c = a + b;
     a = b;
     b = c;
-    sum = sum + c;
+
+    //console.log(c);
   }
-  console.log(" print the Fibonacci sequence up to 5");
+
   console.log(even);
-  console.log(
-    "sum of the even numbered values that do not exceed four million"
-  );
+  // console.log(
+  //   "sum of the even numbered values that do not exceed four million"
+  // );
   console.log(sum);
+  return sum;
 }
-console.log("print the Fibonacci sequence up to 5");
-eulerFibo(5);
-console.log("print the Fibonacci sequence up to ");
-eulerFibo(4000000);
+//console.log("print the Fibonacci sequence up to 10");
+eulerFibo(10);
+//console.log("print the Fibonacci sequence up to ");
+eulerFibo(100);
+eulerFibo(1000);
 // 1 -> 0 0
 // ^    ^ ^
 // c    b a
