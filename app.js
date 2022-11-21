@@ -57,29 +57,62 @@
 
 // 6.1 checkPrime
 // function checkPrime(num) {
-//     let squareRoot = Math.sqrt(num); 
-//     for (let i = 2; i < squareRoot; i++) { 
-//         if (squareRoot % i != 0) //return 'Not a prime number :('
-//     } return 'ITS PRIME CHIEF';
+//     let isPrime = 0; 
+//     let notPrime = 0;  
+//     for (let i = 2; i < num; i++) { 
+//         if (num % i == 0) { 
+//             isPrime = true; 
+//             break; 
+//         }
+//     }   
+// }
+    //sourced from online and edited: 
+function checkPrime(num) {
+    for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
+            return false;
+            break;
+        } else {
+            return true;
+        }
+    }
+}    
+    
+
+
+
+
+// function checkPrime(num) {
+//     let status; 
+//     for (let i = 2; i < num; i++) {
+//         if (i % num == 0) {
+//             console.log(i);
+//         }        
+//     } 
 // }
 
 // console.log(checkPrime(4));
 
-// 6.2 printPrimes //NOT WORKING 
+//define the checking if one number is a prime as a function. invoke that function withen the print primes function 
+// and give it the current index value [i] as it's argument. it returns true or false to the print primes function.
 
-function printPrimes(num) {
-    // let squareRoot = 0; 
-    for (let i = 1; i <= num; i++) { 
-        let squareRoot = Math.sqrt(i);
-        for (let j = 0; j <= Math.floor(squareRoot); j++) {
-            if (squareRoot % j === 0) {
-                return i;
-            } 
-        } 
-    }
-}
+// function checkPrime(num) {
+//          let squareRoot = Math.sqrt(num); 
+//          for (let i = 2; i < squareRoot; i++) { 
+//              if (squareRoot % i != 0) //return 'Not a prime number :('
+//          } return 'ITS PRIME CHIEF';
+//      }
 
-console.log(printPrimes(10))
+// function printPrimes(num) {
+//     let primeNumberArray = [];
+//     for (let i = 1; i <= num; i++) { 
+//         let squareRoot = Math.sqrt(i);
+//         function checkPrime(num) {}
+//     }
+//     return primeNumberArray;
+// }
+
+// console.log(printPrimes(10))
 
 // 7. printLongestWord // NOT WORKING 
 
@@ -118,10 +151,10 @@ module.exports = {
     //isAVowel,
     //getTwoLengths,
    // sumArray,
-    //checkPrime,
-    printPrimes,
+   //  checkPrime,
+    //printPrimes,
     //printLongestWord,
-    eulerFibo,
-    findNeedle,
-    sumPositive
+    // eulerFibo,
+    // findNeedle,
+    // sumPositive
 };
