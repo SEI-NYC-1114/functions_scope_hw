@@ -53,17 +53,39 @@ function sumArray(arr) {
     }
     return sum;
 }
-console.log(sumArray([1,2,3,4,5,6]));
+// console.log(sumArray([1,2,3,4,5,6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
+    const numSqrt = Math.sqrt(num);
+    for (let i = 2; i <= numSqrt; i++)
+    {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
+console.log(checkPrime(6));
+console.log(checkPrime(7));
+console.log(checkPrime(25));
+
 // 6.2 printPrimes
+const ourPrime = [];
 function printPrimes(num) {
     // YOUR CODE HERE
+    for (let i = 2; i <= num; i++){
+        if (checkPrime(i) === true) {
+            ourPrime.push(i);
+        }
+    }
+    console.log(ourPrime);
+
 }
+
+console.log(printPrimes(97));
 
 // 7. printLongestWord
 function printLongestWord(arr) {
