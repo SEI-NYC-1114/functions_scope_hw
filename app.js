@@ -45,19 +45,44 @@ function sumArray(arr) {
 }
 console.log(sumArray([1,2,3,4,5,6]));
 // 6.1 checkPrime
-function checkPrime(num) {
-    // YOUR CODE HERE
+function checkPrime(num){
+    if (num < 2) {
+        console.log("Whole number greater than 1, please.")
+    }
+    let itsPrime=true;
+    for (let i=2; i<=Math.sqrt(num); i++) {
+        if (num % i == 0) {itsPrime=false}
 }
+return itsPrime;
+//check if num is not 1. assume num is prime. test num, return num continues to be true or false. 
+}
+console.log(checkPrime(97));
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    let primeArray=[];
+    for (let i=2; i<=num; i++) {
+        if (checkPrime(i)===true) {
+            primeArray.push(i);
+        }
+    }
+    return primeArray
 }
-
+//Define array. For loop, numbers ranging from 2 to num, if checkPrime(num)=true, push that num to array. 
+console.log(printPrimes(97));
 // 7. printLongestWord
-function printLongestWord(arr) {
-    // YOUR CODE HERE
+function printLongestWord() {
+    let arr=["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"];
+
+    let longestWord= 0;
+    for (let i=0; i<arr.length;i++){
+        if (arr[i].length > longestWord){
+            longestWord=arr[i].length;
+        }
+    }
+    return longestWord;
 }
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]))
 
 // BONUS!
 
