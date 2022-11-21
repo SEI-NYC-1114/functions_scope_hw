@@ -168,6 +168,30 @@ function printLongestWord(arr) {
 
 // 8.c) Adjust the function to return the summed value of the array.
 
+// function eulerFibo(num) {
+//     let fibArr = [];
+//     fibArr= [1,2,3];
+//     for (let i=2; i<=num; i++){
+//         if (fibArr[i]<num){
+//             fibArr.push(fibArr[i-1]+fibArr[i]);
+//         }
+//         else {
+//             if (fibArr[fibArr.length-1] > num){
+//                 fibArr.pop();
+//             }
+//         }
+//     }
+//     console.log(fibArr);
+//     let fibSum = 0;
+//     for (let i=0; i<fibArr.length; i++){
+//         fibSum = fibSum + fibArr[i];
+//     }
+//     return fibSum;
+// }
+// console.log(eulerFibo(8));
+// console.log(eulerFibo(25));
+
+// 8.d) Find the sum of the even numbered values that do not exceed four million
 function eulerFibo(num) {
     let fibArr = [];
     fibArr= [1,2,3];
@@ -184,14 +208,17 @@ function eulerFibo(num) {
     console.log(fibArr);
     let fibSum = 0;
     for (let i=0; i<fibArr.length; i++){
-        fibSum = fibSum + fibArr[i];
+        if ((fibArr[i] <= 4000000)){
+            if ((fibArr[i] % 2) === 0)
+                fibSum = fibSum + fibArr[i];
+        }        
     }
     return fibSum;
 }
 console.log(eulerFibo(8));
-console.log(eulerFibo(25));
+console.log(eulerFibo(90));
+console.log(eulerFibo(700));
 
-// 8.d) Find the sum of the even numbered values that do not exceed four million
 
 // 9. findNeedle
 function findNeedle(arr) {
