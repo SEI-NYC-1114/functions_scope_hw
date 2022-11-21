@@ -74,12 +74,12 @@ function checkPrime(num) {
     return prime;
 }
 
-console.log(checkPrime(2017)); //true
-console.log(checkPrime(97)); // true
-console.log(checkPrime(20)); // false
-console.log(checkPrime(105)); // false
-console.log(checkPrime(89));// true
-console.log(checkPrime(2));// true
+// console.log(checkPrime(2017)); //true
+// console.log(checkPrime(97)); // true
+// console.log(checkPrime(20)); // false
+// console.log(checkPrime(105)); // false
+// console.log(checkPrime(89));// true
+// console.log(checkPrime(2));// true
 
 // 6.2 printPrimes
 function printPrimes(num) {
@@ -91,17 +91,25 @@ function printPrimes(num) {
     }
 }
 
-printPrimes(97);
-printPrimes(9);
-printPrimes(2);
-
+// printPrimes(97);
+// printPrimes(9);
+// printPrimes(2);
 
 
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+    let longestWord = "a";
+    for (let i=0; i<arr.length; i++){
+        if (arr[i].length > longestWord.length){
+            longestWord = arr[i];
+        }
+    }
+    return longestWord;
 }
 
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+console.log(printLongestWord(["Longest", "Long", "Longer", "isThisTheLongest"]));
 // BONUS!
 
 // 8. eulerFibo
