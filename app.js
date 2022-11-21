@@ -26,14 +26,23 @@ function isAVowel(word) {
     }
 }
 
-console.log(isAVowel("a"));
-console.log(isAVowel("t"));
+// console.log(isAVowel("a"));
+// console.log(isAVowel("t"));
 
 
 // 4. getTwoLengths
+const fourthArr = [];
+let lengthW1, lengthW2;
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    lengthW1 = word1.length;
+    lengthW2 = word2.length;
+    fourthArr.push(lengthW1);
+    fourthArr.push(lengthW2);
 }
+
+getTwoLengths("Hank", "Hippopopalous");
+console.log(fourthArr);
 
 // // 5. sumArray
 function sumArray(arr) {
