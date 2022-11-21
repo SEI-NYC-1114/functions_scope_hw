@@ -96,21 +96,36 @@ function checkPrime(num) {
 //define the checking if one number is a prime as a function. invoke that function withen the print primes function 
 // and give it the current index value [i] as it's argument. it returns true or false to the print primes function.
 
-// function checkPrime(num) {
-//          let squareRoot = Math.sqrt(num); 
-//          for (let i = 2; i < squareRoot; i++) { 
-//              if (squareRoot % i != 0) //return 'Not a prime number :('
-//          } return 'ITS PRIME CHIEF';
-//      }
 
-// function printPrimes(num) {
-//     let primeNumberArray = [];
-//     for (let i = 1; i <= num; i++) { 
-//         let squareRoot = Math.sqrt(i);
-//         function checkPrime(num) {}
-//     }
-//     return primeNumberArray;
-// }
+
+function printPrimes(choosenNum){
+    for (let j = 2; j < choosenNum; j++) {
+        checkPrime(j);
+        if (checkPrime = true) {
+            primeArray.push(j); 
+        }
+    }
+    return primeArray; 
+}
+
+function checkPrime(num) {
+    for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
+            return false;
+            break;
+        } else {
+            return true;
+        }
+    }
+}    
+
+
+
+
+let primeArray = [];
+console.log(printPrimes(5)); 
+
+
 
 // console.log(printPrimes(10))
 
