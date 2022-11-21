@@ -70,6 +70,7 @@ Write a function `getTwoLengths` that accepts two parameters (strings). The func
 
 ```javascript
 console.log(getTwoLengths("Hank", "Hippopopalous"));
+
 ```
 
 > => [4, 13]
@@ -86,7 +87,7 @@ The array should contain numbers. The function should return the sum of the numb
 
 Expected result:
 ```javascript
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+5. Sum Array
 => 21
 ```
 <hr>
