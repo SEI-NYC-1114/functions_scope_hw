@@ -230,13 +230,23 @@ function findNeedle(arr) {
     }
 }
 
-findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']);
+// findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']);
+// findNeedle(["wow", "a", "needle", "found!"]);
 
 // 10. sumPositive
 function sumPositive(arr) {
     // YOUR CODE HERE
-
+    let sumPos = 0;
+    for (let i=0; i<arr.length; i++){
+        if (arr[i] > 0){
+            sumPos = sumPos + arr[i];
+        }
+    }
+    return sumPos;
 }
+
+console.log(sumPositive([1, -4, 7, 12]));
+console.log(sumPositive([-1, 4, -3, -40, 0, 6]));
 
 module.exports = {
     calculateCube,
