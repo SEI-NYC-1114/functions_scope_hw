@@ -6,22 +6,35 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    return num * num * num
 }
 
+// console.log(calculateCube(5));
+
 // 3. isAVowel
-function isAVowel(letter) {
-    // YOUR CODE HERE
+const vowel = ["a","e","i","o","u"];
+function isAVowel(word) {
+    for (let i = 0; i < vowel.length; i++) {
+        if (word === vowel[i]) {
+            return true;
+        }
+        return false;   
+    }
 }
+
+// console.log(isAVowel("a"));
+// console.log(isAVowel("t"));
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
 }
 
-// 5. sumArray
+// // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
+
 }
 
 // 6.1 checkPrime
