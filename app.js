@@ -37,13 +37,13 @@ function isAVowel(letter) {
     else return false;
 }
     isAVowel();
-    console.log(isAVowel("B"));
-    console.log(isAVowel("A"));
-    console.log(isAVowel("E"));
-    console.log(isAVowel("I"));
-    console.log(isAVowel("O"));
-    console.log(isAVowel("U"));
-    console.log(isAVowel("S"));
+    // console.log(isAVowel("B"));
+    // console.log(isAVowel("A"));
+    // console.log(isAVowel("E"));
+    // console.log(isAVowel("I"));
+    // console.log(isAVowel("O"));
+    // console.log(isAVowel("U"));
+    // console.log(isAVowel("S"));
 
     
 
@@ -54,7 +54,7 @@ function getTwoLengths(word1, word2) {
     array.push(word1.length, word2.length);
     return array
   }
-  console.log(getTwoLengths("Hello", "Goodbye"));
+  // console.log(getTwoLengths("Hello", "Goodbye"));
 
 
 
@@ -79,7 +79,7 @@ for(let i=0; i < arr.length; i++){
     return sum  
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 
 // 6.1 checkPrime
@@ -87,24 +87,37 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 function checkPrime(num){ 
 for (let i = 2; i <= Math.sqrt(num); i++) {
     if (num % i === 0) {
-        return false;
+  return false;
     }
 } return true;
+
 }
 
-console.log(checkPrime(10));
+// console.log(checkPrime(10));
 
 
 
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
+
+
+
 }
 
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+        let words= "";
+        for(let i=0; i < arr.length; i++){
+     if(words.length < arr[i].length){
+        words=arr[i];
+     }
+    }
+    return words;
 }
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+
 
 // BONUS!
 
