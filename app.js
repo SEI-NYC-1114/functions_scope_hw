@@ -61,13 +61,29 @@ function sumArray(arr) {
 console.log(sumArray([1, 2, 3, 4, 5, 6]))
 
 // 6.1 checkPrime
-function checkPrime(num) {
-    // YOUR CODE HERE
-}
+function checkPrime(num) [
+    numSqr = num**0.5;
+    console.log(`square root of ${num} is ${numSqr}`);
+    let isPrime = true;
+    
+    if((numSqr) % 1 == 0) isPrime = false;
 
+    for(i = 2; i <= Math.floor(numSqr); i++){
+        if ((num / i) % 1 == 0) {
+            isPrime = false
+        }
+    }
+    return isPrime;
+
+
+]
+  console.log(checkPrime(45));
+  console.log(checkPrime(15));
+  
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
+
 }
 
 // 7. printLongestWord
