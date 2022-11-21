@@ -215,19 +215,27 @@ function eulerFibo(num) {
     }
     return fibSum;
 }
-console.log(eulerFibo(8));
-console.log(eulerFibo(90));
-console.log(eulerFibo(700));
+// console.log(eulerFibo(8));
+// console.log(eulerFibo(90));
+// console.log(eulerFibo(700));
 
 
 // 9. findNeedle
 function findNeedle(arr) {
     // YOUR CODE HERE
+    for (let i=0; i<arr.length; i++){
+        if (arr[i] === "needle"){
+            console.log(`found the needle at position ${i}`);
+        }
+    }
 }
+
+findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']);
 
 // 10. sumPositive
 function sumPositive(arr) {
     // YOUR CODE HERE
+
 }
 
 module.exports = {
