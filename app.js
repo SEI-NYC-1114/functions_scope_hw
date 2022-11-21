@@ -36,6 +36,8 @@ function getTwoLengths(word1, word2) {
         return [word1.length, word2.length]
     }
 
+    //just adding return [word1.length, word2.length] works. you dont have to include line35
+
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 
@@ -69,8 +71,7 @@ function printPrimes(num) {
         if(checkPrime(i)) console.log(i)
     }
 }
-console.log(`printPrimes(97)`)
-
+console.log(printPrimes(97))
 
 // 7. printLongestWord
 function printLongestWord(arr) {
