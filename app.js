@@ -94,15 +94,16 @@ function printLongestWord(arr) {
 // 8. eulerFibo
 function eulerFibo(num) {
     // YOUR CODE HERE
-    let fibNums = [];
-    let fibNum = 1;
-    for (let i = 0; i < num; i++) {
-        fibNum = fibNum + fibNums[i - 1];
-        fibNums.push(fibNum)
-    }
+    let fibNums = [0, 1];
+    let fibNum = 0;
+    for (let i = 1; i < num; i++) {
+        while (fibNum < num) {
+        fibNum = fibNum + fibNums[i ];
+        fibNums.push(fibNum);
+    }}
     console.log(fibNums)
 }
-// eulerFibo(100)
+eulerFibo(100)
 
 // 9. findNeedle
 function findNeedle(arr) {
@@ -111,7 +112,7 @@ function findNeedle(arr) {
     needId = arr.indexOf('needle');
     console.log(`needle found at index ${needId}`)
 }
-findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+// findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
 
 // 10. sumPositive
 function sumPositive(arr) {
