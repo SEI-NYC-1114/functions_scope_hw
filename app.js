@@ -82,6 +82,14 @@ function checkPrime(num) [
   
 // 6.2 printPrimes
 function printPrimes(num) {
+    let isPrime = []
+    for (let i = 2; i <= num; i++) {
+        if (checkPrime(i) === true) {
+            isPrime.push(i)
+
+        }
+    }
+    return isPrime;
     // YOUR CODE HERE
 
 }
