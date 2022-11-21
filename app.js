@@ -27,6 +27,7 @@ function getTwoLengths(word1, word2) {
     let arr = [];
     for (let i=0; i<arguments.length;i++) {
         arr.push(arguments[i].length);
+    //Define the array. for each i in the array, evluate length and push to it.    
     }
     return arr;
 }
@@ -34,9 +35,15 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
-}
+    let givenArray = [1,2,3,4,5,6];
+    let sum = 0 ;
 
+    for (let i=0; i<givenArray.length; i++) {
+        sum += givenArray[i]
+    }
+    return sum;
+}
+console.log(sumArray([1,2,3,4,5,6]));
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
