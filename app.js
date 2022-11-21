@@ -7,36 +7,76 @@
 // 2. calculateCube
 function calculateCube(num) {
     // YOUR CODE HERE
+   return Math.pow(3);
 }
 
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
+    const vowels = ('a', 'e','i','o', 'u')
+    if(vowels.include())
 }
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    return(word1.length, word2.length)
 }
 
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
+    let counter = []
+    for(let i = 0; i<arr.length; i++) {
+        counter += arr[i]
+    }
+    return counter;
 }
 
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
+    const squareroot = Math.floor(Math.sqrt(num))
+    if (num === 1) {
+        return `1 is not a prime or a composite.`
+    } else if (num > 1) {
+        {
+
+        }
+        for (let i = 2; i <= squareroot; i++) {
+            if (num % i !== 0 && i === squareroot) {
+                return false
+            } else {
+                return true;
+            }
+        }
+
+    }
 }
+
 
 // 6.2 printPrimes
 function printPrimes(num) {
     // YOUR CODE HERE
+    let PrimeArray = [];
+    for ( let i = 2; i < num; i++){
+        if ( checkPrime(i) === true) {
+            PrimeArray.push(i)
+        }
+    }
+
 }
 
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+let words = [];
+let longest = words[0];
+for ( let i = 1; i < words.length;) {
+    longest = words[i].length
+}
+return words[i]
+    
 }
 
 // BONUS!
@@ -54,6 +94,11 @@ function findNeedle(arr) {
 // 10. sumPositive
 function sumPositive(arr) {
     // YOUR CODE HERE
+    let sum = 0;
+    for ( let i = 0; i < arr.length; i++)  {
+        sum += arr[i]
+    }
+    return sum;
 }
 
 module.exports = {
