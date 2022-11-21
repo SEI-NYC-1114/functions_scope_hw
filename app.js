@@ -108,14 +108,40 @@ function printLongestWord(arr) {
     return longestWord;
 }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
-console.log(printLongestWord(["Longest", "Long", "Longer", "isThisTheLongest"]));
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+// console.log(printLongestWord(["Longest", "Long", "Longer", "isThisTheLongest"]));
 // BONUS!
 
 // 8. eulerFibo
+// 8.a) Write a function that takes a parameter, a number. The function should print the Fibonacci sequence up to that number.
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    let fibArr = [];
+    fibArr= [1,2,3];
+    for (let i=2; i<=num; i++){
+        if (fibArr[i]<num){
+            fibArr.push(fibArr[i-1]+fibArr[i]);
+        }
+        else {
+            if (fibArr[fibArr.length-1] > num){
+                fibArr.pop();
+            }
+            console.log(fibArr);
+            return;
+        }
+    }
 }
+
+eulerFibo(8);
+eulerFibo(89);
+eulerFibo(4181);
+eulerFibo(15);
+eulerFibo(150);
+
+// 8.b) Adjust the function to push the even numbered values into an array.
+
+// 8.c) Adjust the function to return the summed value of the array.
+
+// 8.d) Find the sum of the even numbered values that do not exceed four million
 
 // 9. findNeedle
 function findNeedle(arr) {
