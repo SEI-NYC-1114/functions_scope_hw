@@ -115,22 +115,22 @@ function printLongestWord(arr) {
 // 8. eulerFibo
 // 8.a) Write a function that takes a parameter, a number. The function should print the Fibonacci sequence up to that number.
 
-function eulerFibo(num) {
-    let fibArr = [];
-    fibArr= [1,2,3];
-    for (let i=2; i<=num; i++){
-        if (fibArr[i]<num){
-            fibArr.push(fibArr[i-1]+fibArr[i]);
-        }
-        else {
-            if (fibArr[fibArr.length-1] > num){
-                fibArr.pop();
-            }
-            console.log(fibArr);
-            return;
-        }
-    }
-}
+// function eulerFibo(num) {
+//     let fibArr = [];
+//     fibArr= [1,2,3];
+//     for (let i=2; i<=num; i++){
+//         if (fibArr[i]<num){
+//             fibArr.push(fibArr[i-1]+fibArr[i]);
+//         }
+//         else {
+//             if (fibArr[fibArr.length-1] > num){
+//                 fibArr.pop();
+//             }
+//             console.log(fibArr);
+//             return;
+//         }
+//     }
+// }
 
 // eulerFibo(8);
 // eulerFibo(89);
@@ -139,6 +139,34 @@ function eulerFibo(num) {
 // eulerFibo(150);
 
 // 8.b) Adjust the function to push the even numbered values into an array.
+
+// function eulerFibo(num) {
+//     let fibArr = [];
+//     fibArr= [1,2,3];
+//     for (let i=2; i<=num; i++){
+//         if (fibArr[i]<num){
+//             fibArr.push(fibArr[i-1]+fibArr[i]);
+//         }
+//         else {
+//             if (fibArr[fibArr.length-1] > num){
+//                 fibArr.pop();
+//             }
+//         }
+//     }
+//     console.log(fibArr);
+//     let evenArr =[];
+//     for (let i=0; i<fibArr.length; i++){
+//         if ((fibArr[i] % 2) === 0){
+//             evenArr.push(fibArr[i]);
+//         }
+//     }
+//     console.log(evenArr);
+// }
+
+// eulerFibo(89);
+// eulerFibo(150);
+
+// 8.c) Adjust the function to return the summed value of the array.
 
 function eulerFibo(num) {
     let fibArr = [];
@@ -154,19 +182,14 @@ function eulerFibo(num) {
         }
     }
     console.log(fibArr);
-    let evenArr =[];
+    let fibSum = 0;
     for (let i=0; i<fibArr.length; i++){
-        if ((fibArr[i] % 2) === 0){
-            evenArr.push(fibArr[i]);
-        }
+        fibSum = fibSum + fibArr[i];
     }
-    console.log(evenArr);
+    return fibSum;
 }
-
-eulerFibo(89);
-eulerFibo(150);
-
-// 8.c) Adjust the function to return the summed value of the array.
+console.log(eulerFibo(8));
+console.log(eulerFibo(25));
 
 // 8.d) Find the sum of the even numbered values that do not exceed four million
 
